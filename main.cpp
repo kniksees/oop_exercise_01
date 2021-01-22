@@ -91,23 +91,12 @@ public:
 
 int main() {
 
-    IPAdress ip_1_1(192, 168, 1, 30);
-    IPAdress ip_1_3(192, 168, 1, 30);
+    IPAdress ip_1_1(100, 111, 1, 30);
+    IPAdress ip_1_3(100, 111, 1, 30);
     IPAdress ip_1_2(255, 255, 255, 255);
-
-
-
 
     bool i = ip_1_1.affiliation(ip_1_2,ip_1_3);
     cout << i << endl;
-
-
-
-
-
     cout << int(ip_1_3.GetA()) << "." << int(ip_1_3.GetB())  << "." << int(ip_1_3.GetC())  << "." << int(ip_1_3.GetD())  << endl;
-
-
-
     return 0;
 }
